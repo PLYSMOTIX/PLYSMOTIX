@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Safety App</title>
+<style>
+  :root {
+    --brand-primary: #D6336C;
+    --brand-primary-dark: #A61E4D;
+    --brand-secondary: #7048E8;
+    --ink: #1A1523;
+    --ink-soft: #6B6478;
+    --surface: #FFFFFF;
+    --surface-alt: #FFF0F6;
+    --border: #EEE9F5;
+    --safe-bg: #E6FCF5;
+    --safe-text: #0CA678;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: linear-gradient(180deg, var(--surface-alt) 0%, #FFFFFF 320px);
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+  header.hero {
+    padding: 56px 0 32px;
+  }
+  .eyebrow {
+    display: inline-block;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--brand-primary);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
+  h1 {
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 800;
+    margin: 0 0 12px;
+    letter-spacing: -0.02em;
+  }
+  .meta {
+    color: var(--ink-soft);
+    font-size: 15px;
+  }
+  .summary-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 24px 26px;
+    margin: 32px 0 8px;
+    box-shadow: 0 1px 3px rgba(26,21,35,0.04);
+  }
+  .summary-card h2 {
+    margin-top: 0;
+    font-size: 17px;
+  }
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    margin-top: 16px;
+  }
+  .summary-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 14px;
+  }
+  .summary-item .dot {
+    flex: none;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--safe-text);
+    margin-top: 7px;
+  }
+  nav.toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 20px 24px;
+    margin: 28px 0 40px;
+  }
+  nav.toc h2 { font-size: 15px; margin: 0 0 12px; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.04em; }
+  nav.toc ol { margin: 0; padding-left: 20px; columns: 2; }
+  nav.toc li { margin-bottom: 8px; font-size: 14px; }
+  nav.toc a { color: var(--brand-secondary); text-decoration: none; }
+  nav.toc a:hover { text-decoration: underline; }
+
+  section {
+    margin: 44px 0;
+    scroll-margin-top: 20px;
+  }
+  section h2 {
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    border-bottom: 2px solid var(--surface-alt);
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+  }
+  section h3 {
+    font-size: 16px;
+    margin: 22px 0 8px;
+    color: var(--brand-primary-dark);
+  }
+  p { margin: 0 0 14px; color: #2A2438; }
+  ul { padding-left: 22px; margin: 0 0 14px; }
+  li { margin-bottom: 6px; }
+
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 20px;
+    font-size: 14px;
+  }
+  table.data-table th, table.data-table td {
+    text-align: left;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    vertical-align: top;
+  }
+  table.data-table th {
+    background: var(--surface-alt);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--brand-primary-dark);
+  }
+  table.data-table tr:nth-child(even) td { background: #FCFAFF; }
+
+  .callout {
+    background: var(--safe-bg);
+    border: 1px solid #B2F2E3;
+    color: #087F5B;
+    border-radius: 14px;
+    padding: 16px 18px;
+    font-size: 14px;
+    margin: 18px 0;
+  }
+  .callout.warn {
+    background: #FFF3BF;
+    border-color: #FFE066;
+    color: #7A5C00;
+  }
+  .placeholder {
+    background: #FFF0F0;
+    border: 1px dashed #FFA8A8;
+    color: #C92A2A;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-family: ui-monospace, monospace;
+    font-size: 13px;
+  }
+  footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--ink-soft);
+    font-size: 13px;
+  }
+  a.back-top {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--brand-secondary);
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <span class="eyebrow">🛡️ Safety App — Privacy Policy</span>
+    <h1>Your data stays on your phone. That's the whole design.</h1>
+    <p class="meta">Effective date: <strong id="effective-date"> 1 Jan 2026]</strong> · Last updated: <strong id="updated-date"> 14 July 2026</strong></p>
+  </header>
+
+  <div class="summary-card">
+    <h2>The short version</h2>
+    <div class="summary-grid">
+      <div class="summary-item"><span class="dot"></span>Safety App has no backend server. Nothing you enter is uploaded to us, because there's no "us" to upload it to.</div>
+      <div class="summary-item"><span class="dot"></span>Your emergency contacts, location, medical ID, and SOS history are stored only in the app's private storage on your device.</div>
+      <div class="summary-item"><span class="dot"></span>When you trigger SOS, your phone sends an SMS and/or shares a link directly to the contacts <em>you</em> chose — the app itself never sees or stores that message on any server.</div>
+      <div class="summary-item"><span class="dot"></span>We don't run analytics, ad SDKs, or trackers in this app.</div>
+      <div class="summary-item"><span class="dot"></span>Audio evidence clips are recorded and saved locally; they're only shared if you explicitly tap "Share."</div>
+      <div class="summary-item"><span class="dot"></span>You can delete your data at any time — clear it in-app, or uninstall the app to remove everything.</div>
+    </div>
+  </div>
+
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#intro">1. Introduction</a></li>
+      <li><a href="#data-we-handle">2. Data the app handles</a></li>
+      <li><a href="#permissions">3. Permissions and why we ask</a></li>
+      <li><a href="#how-used">4. How your data is used</a></li>
+      <li><a href="#sharing">5. Sharing with third parties</a></li>
+      <li><a href="#storage">6. Storage, security, and retention</a></li>
+      <li><a href="#your-rights">7. Your choices and rights</a></li>
+      <li><a href="#children">8. Children's privacy</a></li>
+      <li><a href="#thirdparty-services">9. Third-party services we rely on</a></li>
+      <li><a href="#changes">10. Changes to this policy</a></li>
+      <li><a href="#contact">11. Contact us</a></li>
+    </ol>
+  </nav>
+
+  <section id="intro">
+    <h2>1. Introduction</h2>
+    <p>
+      Safety App ("the app", "we") is a personal emergency-response application covering women's safety, medical
+      emergencies, accidents, and general panic situations. This policy explains what information the app accesses,
+      why it needs that access, and — most importantly — where that information actually goes. It applies to the
+      Android application distributed on Google Play under the package name
+      <span class="placeholder">in.plysmotix.womensafety</span>.
+    </p>
+    <p>
+      The single most important fact in this document: <strong>the app does not operate a server, database, or cloud
+      backend of any kind.</strong> Every feature described below — SOS messaging, location, contacts, medical ID,
+      audio evidence, check-in timers — runs and stores its data entirely on your device, using your phone's own SMS,
+      dialer, and storage capabilities. We built it this way because a safety app is the last place you want your
+      most sensitive information sitting on someone else's server.
+    </p>
+  </section>
+
+  <section id="data-we-handle">
+    <h2>2. Data the app handles</h2>
+    <p>All of the following is created by you, stored locally on your device, and never transmitted to us:</p>
+    <table class="data-table">
+      <tr><th>Data type</th><th>What it is</th><th>Where it lives</th></tr>
+      <tr>
+        <td>Emergency contacts</td>
+        <td>Phone numbers you choose to add (optionally picked from your device's Contacts app)</td>
+        <td>Local app storage only</td>
+      </tr>
+      <tr>
+        <td>Location</td>
+        <td>GPS/network coordinates, fetched when you open the app and when SOS is triggered</td>
+        <td>Local app storage; sent only inside the SOS text message to contacts you chose</td>
+      </tr>
+      <tr>
+        <td>SOS message content</td>
+        <td>Your custom message text and selected emergency category</td>
+        <td>Local app storage; sent via your device's own SMS function</td>
+      </tr>
+      <tr>
+        <td>Audio evidence clips</td>
+        <td>Short audio recordings captured automatically during an SOS, if you've enabled this feature</td>
+        <td>Local app-private storage; only leaves your device if you tap Share</td>
+      </tr>
+      <tr>
+        <td>Medical ID</td>
+        <td>Blood type, allergies, medications, conditions, emergency doctor contact (all optional fields you fill in)</td>
+        <td>Local app storage; included in SOS texts only if you enable that option</td>
+      </tr>
+      <tr>
+        <td>SOS history log</td>
+        <td>Timestamps and delivery status (sent/failed/pending) of past SOS events</td>
+        <td>Local on-device database</td>
+      </tr>
+      <tr>
+        <td>App settings</td>
+        <td>Feature toggles, repeat interval, dark mode preference, default emergency category</td>
+        <td>Local app storage</td>
+      </tr>
+    </table>
+    <div class="callout">
+      We don't ask you to create an account, sign in, or provide an email address to use this app — so we don't
+      collect any of that either.
+    </div>
+  </section>
+
+  <section id="permissions">
+    <h2>3. Permissions and why we ask</h2>
+    <table class="data-table">
+      <tr><th>Permission</th><th>Used for</th><th>Requested when</th></tr>
+      <tr><td>SMS</td><td>Sending your SOS message to your saved contacts</td><td>First app launch</td></tr>
+      <tr><td>Location (fine/coarse)</td><td>Including your location in any SOS you trigger yourself (button, shake, silent, widget)</td><td>First app launch</td></tr>
+      <tr><td>Location (background)</td><td>Attaching location to Repeat SOS and missed Check-In auto-SOS specifically when they fire while the app is fully closed — required on Android 11+ for those two automated flows to include location at all</td><td>Shown as a dedicated in-app explanation screen, separately, only after you've granted foreground location and only if you choose "Allow"</td></tr>
+      <tr><td>Contacts</td><td>Letting you pick a number from your phone's address book instead of typing it</td><td>When you tap to add a contact</td></tr>
+      <tr><td>Camera</td><td>Flashlight-only — used to strobe the torch for the SOS flashlight feature. No photos or video are ever captured.</td><td>First app launch</td></tr>
+      <tr><td>Microphone</td><td>Recording local audio evidence during SOS, entirely optional</td><td>Only when you enable this feature in Settings</td></tr>
+      <tr><td>Notifications</td><td>Showing the SOS-active and check-in reminder notifications</td><td>First app launch</td></tr>
+      <tr><td>Exact alarms</td><td>Reliably firing repeat-SOS and check-in timers on schedule</td><td>First app launch</td></tr>
+      <tr><td>Body sensors (accelerometer)</td><td>Optional shake-to-SOS and fall-detection triggers, processed on-device in real time and never recorded or stored</td><td>Only if enabled in Settings</td></tr>
+    </table>
+    <p>
+      We deliberately never request a permission in the moment you're sending a real SOS — every permission prompt
+      happens during normal app setup, not during an emergency, so nothing can interrupt or delay you when it matters.
+    </p>
+  </section>
+
+  <section id="how-used">
+    <h2>4. How your data is used</h2>
+    <ul>
+      <li><strong>To send your SOS.</strong> Your location and message are combined into a text sent via your device's SMS to the contacts you selected.</li>
+      <li><strong>To let you review past activity.</strong> SOS History and Audio Evidence screens read directly from local on-device storage.</li>
+      <li><strong>To personalize emergency messages.</strong> Your chosen SOS category and optional Medical ID are used to build a more useful message for responders.</li>
+      <li><strong>To run optional automation you turn on</strong> — repeat SOS, check-in timers, shake/fall detection — all evaluated locally on your device.</li>
+    </ul>
+    <p>We do not use your data for advertising, profiling, or any purpose beyond operating the safety features you enable.</p>
+  </section>
+
+  <section id="sharing">
+    <h2>5. Sharing with third parties</h2>
+    <p>
+      We do not sell, rent, or share your personal data with third parties, because we don't have a copy of it to
+      share — it never leaves your device except through actions you directly initiate:
+    </p>
+    <ul>
+      <li>SMS sent to contacts you chose, via your device's own carrier/SMS app</li>
+      <li>A Google Maps link included in that SMS, generated locally from your coordinates</li>
+      <li>Audio clips or app links you explicitly choose to share via Android's share sheet</li>
+      <li>The "Find Nearby Help" feature opens your device's default Maps app with a search query — no data about you is sent to us in the process</li>
+    </ul>
+  </section>
+
+  <section id="storage">
+    <h2>6. Storage, security, and retention</h2>
+    <p>
+      All app data is stored in Android's app-private internal storage, which is sandboxed by the operating system
+      and inaccessible to other apps without root access. Sensitive screens (like your saved contacts) can optionally
+      be protected behind your device's biometric or PIN lock via Android's BiometricPrompt — we never receive or
+      store your fingerprint, face data, or PIN; that's handled entirely by your device's OS.
+    </p>
+    <p>
+      Data is retained for as long as the app is installed, or until you manually delete it (e.g., deleting a log
+      entry or audio clip). Uninstalling the app removes all of its local data permanently, per standard Android
+      behavior.
+    </p>
+  </section>
+
+  <section id="your-rights">
+    <h2>7. Your choices and rights</h2>
+    <p>Because everything lives on your device, you're already in full control:</p>
+    <ul>
+      <li><strong>Access:</strong> open any in-app screen (Contacts, SOS History, Audio Evidence, Medical ID) to see exactly what's stored.</li>
+      <li><strong>Correction:</strong> edit your contacts, medical ID, or settings at any time.</li>
+      <li><strong>Deletion:</strong> delete individual SOS logs or audio clips from within the app, or uninstall the app to erase everything at once.</li>
+      <li><strong>Permission control:</strong> revoke any permission at any time via Android Settings → Apps → Safety App → Permissions. Note that revoking SMS or Location will prevent core SOS functionality from working.</li>
+    </ul>
+    <div class="callout warn">
+      Because we hold no copy of your data on any server, requests like "please delete my data from your servers"
+      aren't applicable — there's nothing on our end to delete. If you believe this is inaccurate for a specific
+      build of the app, please contact us using the details in Section 11.
+    </div>
+  </section>
+
+  <section id="children">
+    <h2>8. Children's privacy</h2>
+    <p>
+      This app is not directed at children under 13 (or the relevant minimum age in your country) and we do not
+      knowingly collect information from children. As all data is stored locally and there is no account system, we
+      have no mechanism to knowingly identify or collect data from any user by age.
+    </p>
+  </section>
+
+  <section id="thirdparty-services">
+    <h2>9. Third-party services we rely on</h2>
+    <p>The app integrates a small number of Google/Android platform services to function. These operate under their own privacy policies:</p>
+    <ul>
+      <li><strong>Google Play In-App Updates</strong> — checks for new app versions via Google Play services.</li>
+      <li><strong>Google Play Services Location (Fused Location Provider)</strong> — used to obtain your device's location for SOS.</li>
+      <li><strong>Android biometric/keystore APIs</strong> — used for the optional Contacts screen lock, handled entirely on-device.</li>
+    </ul>
+    <p>We do not integrate any advertising networks, analytics SDKs, or crash-reporting services that transmit data off-device.</p>
+    <div class="callout warn">
+      If you later add Firebase, Crashlytics, an ads SDK, or any analytics tool, this section and the summary above
+      must be updated to reflect that — this policy is only accurate for the on-device-only version of the app
+      described here.
+    </div>
+  </section>
+
+  <section id="changes">
+    <h2>10. Changes to this policy</h2>
+    <p>
+      If this policy changes — for example, if a future version of the app adds cloud backup, an account system, or
+      analytics — we will update the "Last updated" date above and, for material changes, notify users via an
+      in-app notice before the change takes effect.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>11. Contact us</h2>
+    <p>Questions about this policy or how your data is handled can be sent to:</p>
+    <p>
+      📧 <span class="placeholder">support@plysmotix.in</span><br>
+      🏢 <span class="placeholder">Plysmotix Tech Lab</span>
+    </p>
+  </section>
+
+  <footer>
+    <p>This document is a starting point drafted to match this app's actual current data practices — it is not a
+      substitute for legal advice. Have a lawyer review it before publishing, especially to confirm it satisfies
+      GDPR, CCPA, India's DPDP Act, or other regulations relevant to where your users are located.</p>
+    <a class="back-top" href="#top">↑ Back to top</a>
+  </footer>
+
+</div>
+</body>
+</html>
