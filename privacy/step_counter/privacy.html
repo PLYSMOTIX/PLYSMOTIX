@@ -51,11 +51,33 @@
         border-radius: 4px;
         font-size: 14.5px;
     }
+    .sensitive {
+        background: #fff4e5;
+        border-left: 4px solid #f5a623;
+        padding: 12px 16px;
+        margin: 16px 0;
+        border-radius: 4px;
+        font-size: 14.5px;
+    }
     .contact-box {
         background: #f0f9f9;
         padding: 16px 20px;
         border-radius: 8px;
         margin-top: 12px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 12px 0;
+        font-size: 14px;
+    }
+    th, td {
+        text-align: left;
+        padding: 8px 10px;
+        border-bottom: 1px solid #eee;
+    }
+    th {
+        color: #018786;
     }
     footer {
         margin-top: 48px;
@@ -69,25 +91,37 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: July 19, 2026</p>
+<p class="updated">Last updated: July 21, 2026</p>
 
 <p>This Privacy Policy describes how Plysmotix Health ("the App," "we," "us") handles information
 when you use the app. Plysmotix Health is developed by <strong>Plysmotix Tech Lab</strong>.</p>
 
-<p>The short version: your health data (steps, water intake, sleep logs, heart rate readings, and
-your weight/height/goals) is stored <strong>only on your device</strong>. We do not operate a
-server that receives or stores this data, and we do not sell your personal information to anyone.</p>
+<p>The short version: your health data — steps, water intake, sleep logs, heart rate readings,
+workout sessions, medicine reminders, and your weight/height/goals — is stored
+<strong>only on your device</strong>. We do not operate a server that receives or stores this
+data, and we do not sell your personal information to anyone.</p>
 
 <h2>1. Information the App Collects</h2>
 
 <p><strong>Health and fitness data you enter or that the app measures, stored locally on your device:</strong></p>
-<ul>
-    <li>Step counts, recorded using your phone's built-in step sensor</li>
-    <li>Water intake amounts you log</li>
-    <li>Sleep entries you log (bedtime, wake time, sleep quality rating)</li>
-    <li>Heart rate readings, if you choose to connect a smartwatch or fitness band via Health Connect (see Section 3)</li>
-    <li>Your weight, height, and daily goals (steps, water, heart rate alert range), which you enter yourself and which are used only to calculate distance, calories, and BMI on your device</li>
-</ul>
+<table>
+    <tr><th>Data type</th><th>What's stored</th></tr>
+    <tr><td>Steps</td><td>Daily totals, and an hourly breakdown showing what time of day you were active</td></tr>
+    <tr><td>Workout sessions</td><td>Start/end time, type (walk/run/workout), and steps taken during the session</td></tr>
+    <tr><td>Water intake</td><td>Amounts you log, by day</td></tr>
+    <tr><td>Sleep</td><td>Bedtime, wake time, and a self-rated quality score you enter</td></tr>
+    <tr><td>Heart rate</td><td>Readings, if you connect a smartwatch or band via Health Connect (see Section 3)</td></tr>
+    <tr><td>Medicine reminders</td><td>Medicine name, optional dosage note, and reminder time — see the note below</td></tr>
+    <tr><td>Profile</td><td>Weight, height, and your own goals (steps, water, heart rate alert range), used only to calculate distance, calories, and BMI on your device</td></tr>
+</table>
+
+<div class="sensitive">
+    <strong>A note on medicine data specifically:</strong> medicine names can indirectly reveal
+    information about your health conditions. This data is treated the same way as your other
+    health data described above — stored only on your device, never transmitted anywhere, never
+    used for advertising, and never shared with any third party. It exists solely so the app can
+    show you a local notification at the time you chose.
+</div>
 
 <p><strong>Information collected for advertising, via Google AdMob:</strong></p>
 <ul>
@@ -95,16 +129,19 @@ server that receives or stores this data, and we do not sell your personal infor
     <li>Where required by law (EEA, UK, Switzerland), a consent choice is collected via Google's
         User Messaging Platform before any personalized advertising data is used — see Section 4</li>
 </ul>
+<p>Advertising data collection is completely separate from your health data. None of the health
+information described above is ever passed to AdMob or used to target ads.</p>
 
 <p>We do <strong>not</strong> collect your name, email address, or any account registration
 information — the app does not require or support account creation.</p>
 
 <h2>2. How Information Is Used</h2>
 <ul>
-    <li>To display your step count, water intake, sleep history, and heart rate readings within the app</li>
+    <li>To display your step count, water intake, sleep history, heart rate readings, workout
+        sessions, and medicine schedule within the app</li>
     <li>To calculate distance walked, calories burned, and BMI, based on the height/weight you provide</li>
     <li>To send you local notifications you've opted into (step goal reminders, water reminders,
-        bedtime reminders, and heart rate range alerts)</li>
+        bedtime reminders, medicine reminders, and heart rate range alerts)</li>
     <li>To serve advertising through Google AdMob</li>
 </ul>
 
@@ -132,7 +169,14 @@ consent choice at any time from the app's Profile tab, under "Manage Ad Consent.
 <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google's own Partner Sites policy</a>
 and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
 
-<h2>5. Data Storage and Security</h2>
+<h2>5. Notifications</h2>
+<p>The app can send local notifications for: step goal progress, water reminders, bedtime
+reminders, medicine reminders, and heart rate range alerts. All of these are generated entirely
+on your device based on your own data and your own settings — none of them involve sending your
+data anywhere to generate the notification. You can turn off any of these individually from
+within the app.</p>
+
+<h2>6. Data Storage and Security</h2>
 <p>All health and fitness data is stored locally on your device using a local database and app
 preferences. It is not transmitted to, or stored on, any server we operate. If you uninstall the
 app, this data is deleted from your device (unless your device's own backup settings separately
@@ -140,30 +184,32 @@ back up app data — you can control this in your device's system settings).</p>
 <p>We take reasonable measures to protect information handled by the app, but no method of
 electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
 
-<h2>6. Children's Privacy</h2>
+<h2>7. Children's Privacy</h2>
 <p>This app is not directed at children under the age of 13 (or the applicable minimum age in your
 region), and we do not knowingly collect personal information from children.</p>
 
-<h2>7. Your Choices</h2>
+<h2>8. Your Choices</h2>
 <ul>
-    <li>You can disable step tracking, water reminders, bedtime reminders, or heart rate alerts at
-        any time from within the app</li>
+    <li>You can disable step tracking, water reminders, bedtime reminders, medicine reminders, or
+        heart rate alerts at any time from within the app</li>
     <li>You can revoke Health Connect access from the Health Connect app at any time</li>
     <li>You can change or withdraw ad consent from the app's Profile tab at any time</li>
+    <li>You can delete individual medicines, workout sessions, or other logged entries directly
+        within the app</li>
     <li>You can delete all local app data by uninstalling the app, or by clearing app data from your
         device's system settings</li>
 </ul>
 
-<h2>8. Changes to This Policy</h2>
-<p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an
-updated "Last updated" date above. Continued use of the app after changes are posted constitutes
-acceptance of the revised policy.</p>
+<h2>9. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time — for example, as new features are added.
+Changes will be posted on this page with an updated "Last updated" date above. Continued use of
+the app after changes are posted constitutes acceptance of the revised policy.</p>
 
-<h2>9. Contact Us</h2>
+<h2>10. Contact Us</h2>
 <div class="contact-box">
     <p style="margin:0;">If you have questions about this Privacy Policy, contact:</p>
     <p style="margin:8px 0 0;"><strong>Plysmotix Tech Lab</strong><br>
-    Email: <em>hello@plysmotix.in</em></p>
+    Email: <em>support@plysmotixtechlab.com</em></p>
 </div>
 
 <footer>
