@@ -3,182 +3,294 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy - Mesh Communication App Plysmotix Connect</title>
-
+<title>Privacy Policy — Plysmotix Connect</title>
 <style>
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f5f5f5;
-    margin:0;
-    padding:0;
-    color:#333;
-}
-.container{
-    max-width:900px;
-    margin:40px auto;
-    background:#fff;
-    padding:40px;
-    border-radius:10px;
-    box-shadow:0 0 15px rgba(0,0,0,.1);
-}
-h1,h2{
-    color:#1976D2;
-}
-p,li{
-    line-height:1.7;
-}
-footer{
-    margin-top:40px;
-    border-top:1px solid #ddd;
-    padding-top:20px;
-    font-size:14px;
-    color:#666;
-}
+  :root {
+    --primary: #3D5AFE;
+    --secondary: #00E5A0;
+    --ink: #171B22;
+    --muted: #5B6472;
+    --bg: #F7F8FA;
+    --card: #FFFFFF;
+    --border: #E4E7EC;
+    --warn-bg: #FFF6E5;
+    --warn-border: #F0C674;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.65;
+  }
+  .top {
+    background: var(--ink);
+    color: #fff;
+    padding: 56px 20px 64px;
+  }
+  .top .wrap { max-width: 780px; margin: 0 auto; }
+  .eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin-bottom: 14px;
+  }
+  h1 { font-size: 32px; margin: 0 0 10px; }
+  .top p { color: #B7BEC9; margin: 0; font-size: 15px; }
+  main.wrap { max-width: 780px; margin: -32px auto 80px; padding: 0 20px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 36px 40px;
+    margin-bottom: 20px;
+  }
+  .summary {
+    border-left: 4px solid var(--secondary);
+  }
+  .summary h2 { margin-top: 0; }
+  .summary ul { margin: 12px 0 0; padding-left: 20px; }
+  .summary li { margin-bottom: 8px; }
+  .placeholder-note {
+    background: var(--warn-bg);
+    border: 1px solid var(--warn-border);
+    border-radius: 10px;
+    padding: 16px 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .placeholder-note strong { color: #8A6100; }
+  nav.toc {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+  }
+  nav.toc h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); margin: 0 0 12px; }
+  nav.toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 24px; }
+  nav.toc li { margin-bottom: 6px; break-inside: avoid; }
+  nav.toc a { color: var(--primary); text-decoration: none; font-size: 14.5px; }
+  nav.toc a:hover { text-decoration: underline; }
+  section { margin-bottom: 8px; }
+  h2.section-title {
+    font-size: 20px;
+    margin: 0 0 4px;
+    padding-top: 8px;
+    scroll-margin-top: 20px;
+  }
+  .section-num { color: var(--primary); font-weight: 800; margin-right: 8px; }
+  p { font-size: 15.5px; }
+  ul, ol.plain { padding-left: 22px; }
+  li { margin-bottom: 8px; font-size: 15.5px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 4px;
+    font-size: 14.5px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.03em; font-weight: 700; }
+  code {
+    background: rgba(61, 90, 254, 0.08);
+    color: var(--primary);
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+  a.link { color: var(--primary); }
+  .bracket { color: #B5511F; background: #FFF1E9; padding: 1px 5px; border-radius: 4px; }
+  footer.page-footer {
+    max-width: 780px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+    font-size: 13px;
+    color: var(--muted);
+  }
 </style>
-
 </head>
-
 <body>
 
-<div class="container">
-
-<h1>Privacy Policy</h1>
-
-<p><strong>Last Updated:</strong> July 23, 2026</p>
-
-<p>
-This Privacy Policy explains how our Mesh Communication App ("the App")
-handles your information while using Bluetooth, Wi-Fi Direct, and local Wi-Fi
-mesh networking features.
-</p>
-
-<h2>Information We Collect</h2>
-
-<p>
-The App is designed to operate primarily over local peer-to-peer mesh
-connections and does not require user registration.
-</p>
-
-<p>The App may access:</p>
-
-<ul>
-<li>Bluetooth permissions for discovering and connecting nearby devices.</li>
-<li>Nearby Wi-Fi devices for peer-to-peer communication.</li>
-<li>Network information required to establish mesh communication.</li>
-<li>Device name (only to identify nearby devices).</li>
-</ul>
-
-<p>
-The App does <strong>not</strong> collect personal information such as your
-name, email address, phone number, contacts, photos, or messages for our servers.
-</p>
-
-<h2>How Messages Work</h2>
-
-<p>
-Messages are exchanged directly between nearby devices through Bluetooth,
-Wi-Fi Direct, or local mesh networking.
-</p>
-
-<p>
-If the App provides optional relay functionality through nearby devices,
-messages are forwarded only to deliver them to recipients and are not stored
-permanently by us.
-</p>
-
-<h2>Internet Connection</h2>
-
-<p>
-The App is designed to work offline whenever possible.
-Some optional features or future updates may require an internet connection.
-</p>
-
-<h2>Data Storage</h2>
-
-<p>
-Messages and application settings are stored locally on your device.
-The App does not upload your conversations to our servers unless a future
-feature explicitly requires cloud synchronization and you choose to enable it.
-</p>
-
-<h2>Permissions</h2>
-
-<p>The App may request the following permissions:</p>
-
-<ul>
-<li>Bluetooth</li>
-<li>Bluetooth Scan</li>
-<li>Bluetooth Connect</li>
-<li>Nearby Wi-Fi Devices</li>
-<li>Network Access</li>
-<li>Notification Permission (optional)</li>
-<li>Foreground Service (if required for continuous mesh communication)</li>
-</ul>
-
-<p>
-These permissions are used solely for enabling mesh networking and message delivery.
-</p>
-
-<h2>Encryption</h2>
-
-<p>
-Where supported, messages transmitted between devices may be encrypted to
-improve communication security.
-</p>
-
-<h2>Third-Party Services</h2>
-
-<p>
-The App does not sell or share your personal information with third parties.
-If optional services such as crash reporting or analytics are enabled in future
-versions, this policy will be updated accordingly.
-</p>
-
-<h2>Children's Privacy</h2>
-
-<p>
-The App is not directed toward children under the age of 13.
-We do not knowingly collect personal information from children.
-</p>
-
-<h2>Data Security</h2>
-
-<p>
-We use reasonable technical measures to help protect locally stored data and
-communications. However, no electronic communication method can guarantee
-complete security.
-</p>
-
-<h2>Your Rights</h2>
-
-<p>
-Since your data is stored locally, you can delete your conversations and
-application data at any time by clearing the App's storage or uninstalling
-the App.
-</p>
-
-<h2>Changes to This Privacy Policy</h2>
-
-<p>
-We may update this Privacy Policy from time to time. Any changes will be
-posted on this page with the updated revision date.
-</p>
-
-<h2>Contact Us</h2>
-
-<p>
-If you have any questions regarding this Privacy Policy, please contact us:
-</p>
-
-<p>
-<strong>Email:</strong> support@plysmotixtechlab.com
-</p>
-
-<footer>
-© 2026 Your Company. All Rights Reserved.
-</footer>
-
+<div class="top">
+  <div class="wrap">
+    <span class="eyebrow">Privacy Policy</span>
+    <h1>Plysmotix Connect</h1>
+    <p>Last updated: July 25, 2026</p>
+  </div>
 </div>
+
+<main class="wrap">
+
+  <div class="placeholder-note">
+    <strong>Before publishing:</strong> replace the bracketed placeholders below (developer name, contact email, jurisdiction) with your real details, and have this reviewed by someone qualified before treating it as your actual legal policy — this is a good-faith accurate draft based on exactly what the app does, not legal advice.
+  </div>
+
+  <div class="card summary">
+    <h2>The short version</h2>
+    <p>Plysmotix Connect has no server, no account system, and no internet connection for any core feature. Here's what that means in practice:</p>
+    <ul>
+      <li>Your messages, contacts, groups, and identity key are stored <strong>only on your device</strong> — we never see them, because there's nowhere for them to go.</li>
+      <li>We don't run analytics, don't show ads, and don't sell or share data, because we don't collect any to begin with.</li>
+      <li>The permissions the app requests (Bluetooth, Wi-Fi, camera, microphone) are used solely to make on-device features work — never for tracking.</li>
+      <li>Uninstalling the app deletes everything it ever stored.</li>
+    </ul>
+  </div>
+
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#data-we-do-not-collect">Data we don't collect</a></li>
+      <li><a href="#data-on-device">Data stored on your device</a></li>
+      <li><a href="#permissions">Permissions we request</a></li>
+      <li><a href="#third-party">Third-party services</a></li>
+      <li><a href="#sharing">Data sharing</a></li>
+      <li><a href="#retention">Retention and deletion</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#choices">Your choices</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <div class="card">
+    <section id="overview">
+      <h2 class="section-title"><span class="section-num">01</span>Overview</h2>
+      <p>Plysmotix Connect ("the app," "we," "us") is an offline mesh messaging app for Android. It connects directly to nearby devices over Bluetooth and Wi-Fi to send encrypted messages, with no internet connection, server, or user account involved in any core feature. This policy explains what little data the app handles, where it lives, and why each permission exists.</p>
+    </section>
+  </div>
+
+  <div class="card">
+    <section id="data-we-do-not-collect">
+      <h2 class="section-title"><span class="section-num">02</span>Data we don't collect</h2>
+      <p>Because the app has no server or account system, there is no mechanism for us to collect any of the following, and we don't:</p>
+      <ul>
+        <li>Your name, email address, phone number, or any account credentials — the app never asks for them</li>
+        <li>Your messages, photos, voice notes, or files — these are encrypted and travel device-to-device only</li>
+        <li>Your contacts, groups, or channels — stored only in the app's local database on your phone</li>
+        <li>Your location — the app does not access GPS or network-based location, on any Android version</li>
+        <li>Analytics, crash reports, usage statistics, or advertising identifiers</li>
+      </ul>
+      <p>There is simply no Plysmotix Connect server for any of this to be sent to.</p>
+    </section>
+  </div>
+
+  <div class="card">
+    <section id="data-on-device">
+      <h2 class="section-title"><span class="section-num">03</span>Data stored on your device</h2>
+      <p>The app stores the following locally, in its own private app storage, encrypted at rest using Android's Keystore-backed encryption where the data is sensitive:</p>
+      <table>
+        <tr><th>What</th><th>Where it lives</th><th>Leaves your device?</th></tr>
+        <tr><td>Your encryption identity (key pair)</td><td>Encrypted local storage (Android Keystore-backed)</td><td>No — your public key is shared only with people you connect or pair with</td></tr>
+        <tr><td>Messages and chat history</td><td>Local app database</td><td>No — sent encrypted, peer to peer, never stored on any server</td></tr>
+        <tr><td>Contacts, groups, and channels</td><td>Local app database</td><td>No</td></tr>
+        <tr><td>Profile name and photo</td><td>Local app storage</td><td>Only to devices you connect or pair with, shared directly and encrypted</td></tr>
+        <tr><td>Photos, voice notes, and files you send/receive</td><td>Local app storage</td><td>No — transferred directly to the recipient's device only</td></tr>
+      </table>
+    </section>
+  </div>
+
+  <div class="card">
+    <section id="permissions">
+      <h2 class="section-title"><span class="section-num">04</span>Permissions we request</h2>
+      <p>Every permission below exists for a specific on-device feature. None are used to track you.</p>
+      <table>
+        <tr><th>Permission</th><th>Why the app needs it</th></tr>
+        <tr><td>Bluetooth (advertise, connect, scan)</td><td>To discover and connect to nearby devices running the app</td></tr>
+        <tr><td>Wi-Fi state / Nearby Wi-Fi devices</td><td>To use Wi-Fi as an additional mesh transport for faster or larger transfers</td></tr>
+        <tr><td>Location (Android 11 and below only)</td><td>Required by Android itself to perform Bluetooth/Wi-Fi scanning on older OS versions — the app does not read or use your actual location. On Android 12+, this permission isn't requested at all, since Google removed the requirement.</td></tr>
+        <tr><td>Camera</td><td>To scan a QR code when adding a contact</td></tr>
+        <tr><td>Microphone</td><td>To record voice notes you choose to send</td></tr>
+        <tr><td>Notifications</td><td>To show the ongoing "mesh active" notification required by Android for the background connection service</td></tr>
+      </table>
+    </section>
+  </div>
+
+  <div class="card">
+    <section id="third-party">
+      <h2 class="section-title"><span class="section-num">05</span>Third-party services</h2>
+      <p>The app uses two Google-provided libraries to work, both of which run on your device:</p>
+      <ul>
+        <li><strong>Google Nearby Connections API</strong> — powers the Bluetooth/Wi-Fi device discovery and connection. It operates peer-to-peer and does not require or use an internet connection to function.</li>
+        <li><strong>Google ML Kit / Play Services code scanner</strong> — provides the QR code scanning UI when adding a contact.</li>
+      </ul>
+      <p>Both are part of Google Play Services, which operates under <a class="link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's own Privacy Policy</a> — outside our control, since Play Services is present on the device independent of this app. We don't configure either library to send analytics or usage data, and neither is used for anything beyond the specific on-device feature it provides.</p>
+      <p>The app itself makes no network requests of its own and connects to no other third-party service.</p>
+    </section>
+  </div>
+
+  <div class="card">
+    <section id="sharing">
+      <h2 class="section-title"><span class="section-num">06</span>Data sharing</h2>
+      <p>We don't share, sell, rent, or trade any data, because we don't have any to share — nothing you do in the app is ever transmitted to us. Messages, media, and profile information you choose to send go directly and only to the specific device(s) you're communicating with, encrypted end-to-end.</p>
+    </section>
+  </div>
+
+  <div class="card">
+    <section id="retention">
+      <h2 class="section-title"><span class="section-num">07</span>Retention and deletion</h2>
+      <p>All data described above stays on your device for as long as you keep the app installed, or until you delete it yourself using the app's own controls (for example, leaving a group or channel, or blocking a contact). Uninstalling the app permanently deletes your identity key, contacts, messages, and all other locally stored data — there is no copy anywhere else to delete, because none was ever made.</p>
+    </section>
+  </div>
+
+  <div class="card">
+    <section id="security">
+      <h2 class="section-title"><span class="section-num">08</span>Security</h2>
+      <p>Direct messages use a forward-secret Double Ratchet (ECDH key exchange plus AES-256-GCM authenticated encryption), meaning encryption keys rotate as you converse and a compromised device can't decrypt past messages. Your identity key is stored using Android's Keystore-backed encrypted storage. Group and channel messages use a shared AES-256 key distributed only to participants.</p>
+      <p>No software is perfectly secure, and this app has not undergone an independent third-party security audit. We describe its cryptographic design honestly rather than making unqualified security claims.</p>
+    </section>
+  </div>
+
+  <div class="card">
+    <section id="children">
+      <h2 class="section-title"><span class="section-num">09</span>Children's privacy</h2>
+      <p>Plysmotix Connect is not directed at children under 13 (or the relevant minimum age in your region), and we do not knowingly collect personal information from children — consistent with the rest of this policy, we don't collect personal information from anyone, of any age, since there is no server to collect it on.</p>
+    </section>
+  </div>
+
+  <div class="card">
+    <section id="choices">
+      <h2 class="section-title"><span class="section-num">10</span>Your choices</h2>
+      <ul>
+        <li><strong>Revoke permissions</strong> anytime in Android Settings → Apps → Plysmotix Connect → Permissions. Revoking a permission simply disables the feature that needs it (for example, revoking Camera disables QR scanning).</li>
+        <li><strong>Block a contact</strong> in-app to stop receiving messages, media, or profile updates from them.</li>
+        <li><strong>Leave a group or channel</strong> at any time from its options menu.</li>
+        <li><strong>Delete everything</strong> by uninstalling the app.</li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="card">
+    <section id="changes">
+      <h2 class="section-title"><span class="section-num">11</span>Changes to this policy</h2>
+      <p>If this policy changes, we'll update the "Last updated" date at the top of this page and, for material changes, note what changed. Since the app has no way to contact you directly (no account, no email on file), please check this page periodically if you'd like to stay current.</p>
+    </section>
+  </div>
+
+  <div class="card">
+    <section id="contact">
+      <h2 class="section-title"><span class="section-num">12</span>Contact us</h2>
+      <p>Questions about this policy or the app's data practices can be sent to:</p>
+      <p><span class="bracket">support@plysmotixtechlab.com</span></p>
+      <p>Developer / publisher: <span class="bracket">PLYSMOTIX TECH LAB</span></p>
+    </section>
+  </div>
+
+</main>
+
+<footer class="page-footer">
+  Plysmotix Connect — Privacy Policy. This page is designed to be hosted at a public URL for submission to Google Play Console's Data Safety / Privacy Policy requirement.
+</footer>
 
 </body>
 </html>
