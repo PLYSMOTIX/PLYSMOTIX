@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — QR Master</title>
+<style>
+  :root {
+    --primary: #6C5CE7;
+    --text: #1E1E27;
+    --muted: #5A5A68;
+    --bg: #F8F9FE;
+    --card: #FFFFFF;
+    --border: #E6E6F0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+  }
+  header {
+    background: linear-gradient(135deg, #6C5CE7, #4834D4);
+    color: #fff;
+    padding: 48px 20px 40px;
+    text-align: center;
+  }
+  header h1 { margin: 0 0 8px; font-size: 28px; }
+  header p { margin: 0; opacity: 0.9; font-size: 14px; }
+  main {
+    max-width: 760px;
+    margin: -28px auto 60px;
+    padding: 0 20px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px 36px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 18px rgba(76, 52, 212, 0.06);
+  }
+  h2 {
+    font-size: 19px;
+    margin: 0 0 12px;
+    color: var(--primary);
+  }
+  h2 .num {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    background: rgba(108, 92, 231, 0.12);
+    border-radius: 50%;
+    font-size: 13px;
+    margin-right: 8px;
+  }
+  p, li { color: var(--text); font-size: 15px; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  .muted { color: var(--muted); font-size: 14px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  th { color: var(--muted); font-weight: 600; }
+  a { color: var(--primary); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    padding: 20px;
+  }
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p>QR Master — QR Code Scanner &amp; Creator</p>
+  <span class="badge">Last updated: Aug 17, 2026</span>
+</header>
+
+<main>
+
+  <div class="card">
+    <p>This Privacy Policy explains how <strong>QR Master</strong> ("the App", "we", "us") handles information
+    when you use our Android application. We built this app to work primarily <strong>on your device</strong>,
+    and we do not require you to create an account or hand over personal information to use its core features.</p>
+    <p class="muted">If you have questions about this policy, contact us at
+      <a href="mailto:support@plysmotixtechlab.com">support@plysmotixtechlab.com</a>
+      <em>(replace with your real support email before publishing)</em>.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">1</span>Information We Do <em>Not</em> Collect</h2>
+    <ul>
+      <li>We do not require registration, sign-in, or any personal account.</li>
+      <li>We do not collect your name, email address, or phone number.</li>
+      <li>We do not read, transmit, or upload the contents of QR codes you scan or create to our own servers —
+        scanning and generation happen entirely on your device.</li>
+      <li>We do not sell your data to anyone.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">2</span>Camera Permission</h2>
+    <p>QR Master requests <strong>Camera</strong> permission solely to let you point your device at a QR or barcode
+      and decode it in real time. Camera frames are processed on-device using Google's ML Kit barcode scanner and
+      are <strong>never recorded, stored, or sent anywhere</strong>. You can revoke camera access at any time from
+      your device's Settings; the app will simply be unable to scan codes until access is restored.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">3</span>Information Stored On Your Device</h2>
+    <p>Your scan and creation history (the text/URL content, an optional label, a timestamp, and — for codes you
+      create — a generated QR image) is stored <strong>locally on your device only</strong>, in a private app
+      database and private app storage folder. This data:</p>
+    <ul>
+      <li>Is never transmitted to us or to any third party.</li>
+      <li>Is only accessible to the QR Master app on your device.</li>
+      <li>Can be deleted by you at any time from within the History screen (individual entries), or removed
+        entirely by uninstalling the app or clearing app storage from your device Settings.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">4</span>Third-Party Services</h2>
+    <p>The App uses a small number of third-party Google services to function. These providers may collect
+      information as described in their own privacy policies:</p>
+    <table>
+      <tr><th>Service</th><th>Purpose</th><th>Data involved</th></tr>
+      <tr>
+        <td>Google AdMob</td>
+        <td>Displays banner advertisements that support free use of the app</td>
+        <td>Advertising identifiers, device information, approximate location, and ad interaction data, per
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a></td>
+      </tr>
+      <tr>
+        <td>Google Play services (In-App Updates)</td>
+        <td>Checks whether a newer app version is published on Google Play</td>
+        <td>Basic app/version information handled by Google Play, per
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a></td>
+      </tr>
+      <tr>
+        <td>Google ML Kit (on-device)</td>
+        <td>Recognizes QR/barcodes from the camera feed</td>
+        <td>Processed entirely on-device; no image or scan data is sent to Google or to us</td>
+      </tr>
+    </table>
+    <p class="muted">Where required by your region's law (e.g. GDPR in the EU/EEA, UK GDPR, or similar), we rely on
+      your consent or our legitimate interest in operating and funding a free app to process the limited data
+      described above via these providers.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">5</span>Permissions We Request</h2>
+    <table>
+      <tr><th>Permission</th><th>Why</th></tr>
+      <tr><td>Camera</td><td>To scan QR codes and barcodes</td></tr>
+      <tr><td>Internet / Network State</td><td>To load ads and check for app updates</td></tr>
+      <tr><td>Storage (Android 9 and below only)</td><td>To save/share generated QR code images</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">6</span>Children's Privacy</h2>
+    <p>QR Master is not directed at children under 13 (or the minimum age required in your country), and we do not
+      knowingly collect personal information from children. If you believe a child has provided us information,
+      please contact us so we can address it.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">7</span>Data Retention &amp; Deletion</h2>
+    <p>Since your history is stored only on your device, you are always in control of it. You can delete individual
+      entries at any time, or remove all app data by clearing the app's storage or uninstalling QR Master from your
+      device Settings.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">8</span>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time, for example to reflect changes in the app or in
+      applicable law. We'll update the "Last updated" date above when we do. Continued use of the app after changes
+      means you accept the revised policy.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">9</span>Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy or how QR Master handles information, contact us at
+      <a href="mailto:support@plysmotixtechlab.com">support@plysmotixtechlab.com</a>.</p>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2026 QR Master. All rights reserved.
+</footer>
+
+</body>
+</html>
